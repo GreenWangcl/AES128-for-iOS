@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D52EF1DC1830C8A80016EC4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DB1830C8A80016EC4A /* Foundation.framework */; };
+		D52EF1DE1830C8A80016EC4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DD1830C8A80016EC4A /* CoreGraphics.framework */; };
+		D52EF1E01830C8A80016EC4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DF1830C8A80016EC4A /* UIKit.framework */; };
+		D52EF1E61830C8A80016EC4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D52EF1E41830C8A80016EC4A /* InfoPlist.strings */; };
+		D52EF1E81830C8A80016EC4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EF1E71830C8A80016EC4A /* main.m */; };
+		D52EF1EC1830C8A80016EC4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EF1EB1830C8A80016EC4A /* AppDelegate.m */; };
+		D52EF1EE1830C8A80016EC4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52EF1ED1830C8A80016EC4A /* Images.xcassets */; };
+		D52EF1F51830C8A80016EC4A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1F41830C8A80016EC4A /* XCTest.framework */; };
+		D52EF1F61830C8A80016EC4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DB1830C8A80016EC4A /* Foundation.framework */; };
+		D52EF1F71830C8A80016EC4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DF1830C8A80016EC4A /* UIKit.framework */; };
+		D52EF1FF1830C8A80016EC4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D52EF1FD1830C8A80016EC4A /* InfoPlist.strings */; };
+		D52EF2011830C8A80016EC4A /* ASE128DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EF2001830C8A80016EC4A /* ASE128DemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D52EF1F81830C8A80016EC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D52EF1D01830C8A80016EC4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D52EF1D71830C8A80016EC4A;
+			remoteInfo = ASE128Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D52EF1D81830C8A80016EC4A /* ASE128Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASE128Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52EF1DB1830C8A80016EC4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D52EF1DD1830C8A80016EC4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D52EF1DF1830C8A80016EC4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D52EF1E31830C8A80016EC4A /* ASE128Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASE128Demo-Info.plist"; sourceTree = "<group>"; };
+		D52EF1E51830C8A80016EC4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D52EF1E71830C8A80016EC4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D52EF1E91830C8A80016EC4A /* ASE128Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASE128Demo-Prefix.pch"; sourceTree = "<group>"; };
+		D52EF1EA1830C8A80016EC4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D52EF1EB1830C8A80016EC4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D52EF1ED1830C8A80016EC4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D52EF1F31830C8A80016EC4A /* ASE128DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASE128DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52EF1F41830C8A80016EC4A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D52EF1FC1830C8A80016EC4A /* ASE128DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASE128DemoTests-Info.plist"; sourceTree = "<group>"; };
+		D52EF1FE1830C8A80016EC4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D52EF2001830C8A80016EC4A /* ASE128DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASE128DemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D52EF1D51830C8A80016EC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52EF1DE1830C8A80016EC4A /* CoreGraphics.framework in Frameworks */,
+				D52EF1E01830C8A80016EC4A /* UIKit.framework in Frameworks */,
+				D52EF1DC1830C8A80016EC4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52EF1F01830C8A80016EC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52EF1F51830C8A80016EC4A /* XCTest.framework in Frameworks */,
+				D52EF1F71830C8A80016EC4A /* UIKit.framework in Frameworks */,
+				D52EF1F61830C8A80016EC4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D52EF1CF1830C8A80016EC4A = {
+			isa = PBXGroup;
+			children = (
+				D52EF1E11830C8A80016EC4A /* ASE128Demo */,
+				D52EF1FA1830C8A80016EC4A /* ASE128DemoTests */,
+				D52EF1DA1830C8A80016EC4A /* Frameworks */,
+				D52EF1D91830C8A80016EC4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D52EF1D91830C8A80016EC4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D52EF1D81830C8A80016EC4A /* ASE128Demo.app */,
+				D52EF1F31830C8A80016EC4A /* ASE128DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D52EF1DA1830C8A80016EC4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52EF1DB1830C8A80016EC4A /* Foundation.framework */,
+				D52EF1DD1830C8A80016EC4A /* CoreGraphics.framework */,
+				D52EF1DF1830C8A80016EC4A /* UIKit.framework */,
+				D52EF1F41830C8A80016EC4A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D52EF1E11830C8A80016EC4A /* ASE128Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D52EF1EA1830C8A80016EC4A /* AppDelegate.h */,
+				D52EF1EB1830C8A80016EC4A /* AppDelegate.m */,
+				D52EF1ED1830C8A80016EC4A /* Images.xcassets */,
+				D52EF1E21830C8A80016EC4A /* Supporting Files */,
+			);
+			path = ASE128Demo;
+			sourceTree = "<group>";
+		};
+		D52EF1E21830C8A80016EC4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D52EF1E31830C8A80016EC4A /* ASE128Demo-Info.plist */,
+				D52EF1E41830C8A80016EC4A /* InfoPlist.strings */,
+				D52EF1E71830C8A80016EC4A /* main.m */,
+				D52EF1E91830C8A80016EC4A /* ASE128Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D52EF1FA1830C8A80016EC4A /* ASE128DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D52EF2001830C8A80016EC4A /* ASE128DemoTests.m */,
+				D52EF1FB1830C8A80016EC4A /* Supporting Files */,
+			);
+			path = ASE128DemoTests;
+			sourceTree = "<group>";
+		};
+		D52EF1FB1830C8A80016EC4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D52EF1FC1830C8A80016EC4A /* ASE128DemoTests-Info.plist */,
+				D52EF1FD1830C8A80016EC4A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D52EF1D71830C8A80016EC4A /* ASE128Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52EF2041830C8A80016EC4A /* Build configuration list for PBXNativeTarget "ASE128Demo" */;
+			buildPhases = (
+				D52EF1D41830C8A80016EC4A /* Sources */,
+				D52EF1D51830C8A80016EC4A /* Frameworks */,
+				D52EF1D61830C8A80016EC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASE128Demo;
+			productName = ASE128Demo;
+			productReference = D52EF1D81830C8A80016EC4A /* ASE128Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D52EF1F21830C8A80016EC4A /* ASE128DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52EF2071830C8A80016EC4A /* Build configuration list for PBXNativeTarget "ASE128DemoTests" */;
+			buildPhases = (
+				D52EF1EF1830C8A80016EC4A /* Sources */,
+				D52EF1F01830C8A80016EC4A /* Frameworks */,
+				D52EF1F11830C8A80016EC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D52EF1F91830C8A80016EC4A /* PBXTargetDependency */,
+			);
+			name = ASE128DemoTests;
+			productName = ASE128DemoTests;
+			productReference = D52EF1F31830C8A80016EC4A /* ASE128DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D52EF1D01830C8A80016EC4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = zhenghaishu;
+				TargetAttributes = {
+					D52EF1F21830C8A80016EC4A = {
+						TestTargetID = D52EF1D71830C8A80016EC4A;
+					};
+				};
+			};
+			buildConfigurationList = D52EF1D31830C8A80016EC4A /* Build configuration list for PBXProject "ASE128Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D52EF1CF1830C8A80016EC4A;
+			productRefGroup = D52EF1D91830C8A80016EC4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D52EF1D71830C8A80016EC4A /* ASE128Demo */,
+				D52EF1F21830C8A80016EC4A /* ASE128DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D52EF1D61830C8A80016EC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52EF1E61830C8A80016EC4A /* InfoPlist.strings in Resources */,
+				D52EF1EE1830C8A80016EC4A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52EF1F11830C8A80016EC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52EF1FF1830C8A80016EC4A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D52EF1D41830C8A80016EC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52EF1EC1830C8A80016EC4A /* AppDelegate.m in Sources */,
+				D52EF1E81830C8A80016EC4A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D52EF1EF1830C8A80016EC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52EF2011830C8A80016EC4A /* ASE128DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D52EF1F91830C8A80016EC4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D52EF1D71830C8A80016EC4A /* ASE128Demo */;
+			targetProxy = D52EF1F81830C8A80016EC4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D52EF1E41830C8A80016EC4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D52EF1E51830C8A80016EC4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D52EF1FD1830C8A80016EC4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D52EF1FE1830C8A80016EC4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D52EF2021830C8A80016EC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D52EF2031830C8A80016EC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D52EF2051830C8A80016EC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASE128Demo/ASE128Demo-Prefix.pch";
+				INFOPLIST_FILE = "ASE128Demo/ASE128Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D52EF2061830C8A80016EC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASE128Demo/ASE128Demo-Prefix.pch";
+				INFOPLIST_FILE = "ASE128Demo/ASE128Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D52EF2081830C8A80016EC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASE128Demo.app/ASE128Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASE128Demo/ASE128Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ASE128DemoTests/ASE128DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D52EF2091830C8A80016EC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASE128Demo.app/ASE128Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASE128Demo/ASE128Demo-Prefix.pch";
+				INFOPLIST_FILE = "ASE128DemoTests/ASE128DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D52EF1D31830C8A80016EC4A /* Build configuration list for PBXProject "ASE128Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52EF2021830C8A80016EC4A /* Debug */,
+				D52EF2031830C8A80016EC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D52EF2041830C8A80016EC4A /* Build configuration list for PBXNativeTarget "ASE128Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52EF2051830C8A80016EC4A /* Debug */,
+				D52EF2061830C8A80016EC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D52EF2071830C8A80016EC4A /* Build configuration list for PBXNativeTarget "ASE128DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52EF2081830C8A80016EC4A /* Debug */,
+				D52EF2091830C8A80016EC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D52EF1D01830C8A80016EC4A /* Project object */;
+}
