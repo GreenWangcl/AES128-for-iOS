@@ -8,6 +8,7 @@
 
 #import "AES128Util.h"
 #import <CommonCrypto/CommonCryptor.h>
+#import "GTMBase64.h"
 
 @implementation AES128Util
 
@@ -48,11 +49,7 @@
 {
     char keyPtr[kCCKeySizeAES128 + 1];
     memset(keyPtr, 0, sizeof(keyPtr));
-    [gkey getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
-    
-    char ivPtr[kCCBlockSizeAES128 + 1];
-    memset(ivPtr, 0, sizeof(ivPtr));
-    [gIv getCString:ivPtr maxLength:sizeof(ivPtr) encoding:NSUTF8StringEncoding];
+    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     
     NSData *data = [GTMBase64 decodeData:[encryptText dataUsingEncoding:NSUTF8StringEncoding]];
     NSUInteger dataLength = [data length];
@@ -62,10 +59,10 @@
     size_t numBytesCrypted = 0;
     CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
                                           kCCAlgorithmAES128,
-                                          0x0000,
+                                          kCCOptionPKCS7Padding,
                                           keyPtr,
                                           kCCBlockSizeAES128,
-                                          ivPtr,
+                                          NULL,
                                           [data bytes],
                                           dataLength,
                                           buffer,

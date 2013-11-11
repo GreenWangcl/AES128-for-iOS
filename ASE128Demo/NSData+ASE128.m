@@ -12,7 +12,7 @@
 
 @implementation NSData (ASE128)
 
-- (NSData *)AES128EncryptWithKey:(NSString *)key {//加密
+- (NSData *)AES128EncryptWithKey:(NSString *)key {
     char keyPtr[kCCKeySizeAES128+1];
     bzero(keyPtr, sizeof(keyPtr));
     [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
@@ -39,7 +39,7 @@
 }
 
 
-- (NSData *)AES128DecryptWithKey:(NSString *)key {//解密
+- (NSData *)AES128DecryptWithKey:(NSString *)key {
     char keyPtr[kCCKeySizeAES128+1];
     bzero(keyPtr, sizeof(keyPtr));
     [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
@@ -48,7 +48,7 @@
     void *buffer = malloc(bufferSize);
     size_t numBytesDecrypted = 0;
     CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128,
-                                          kCCOptionPKCS7Padding, // 填充方法一定要与加密过程一样，否则解密会失败
+                                          kCCOptionPKCS7Padding, // must be the same pad when encryed
                                           keyPtr, kCCBlockSizeAES128,
                                           NULL,
                                           [self bytes], dataLength,

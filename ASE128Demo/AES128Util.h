@@ -12,6 +12,6 @@
 
 +(NSString *)AES128Encrypt:(NSString *)plainText key:(NSString *)key;
 
-+(NSString *)AES128Decrypt:(NSString *)plainText key:(NSString *)key;
++(NSString *)AES128Decrypt:(NSString *)encryptText key:(NSString *)key;
 
 @end
