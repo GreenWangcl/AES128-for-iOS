@@ -17,9 +17,9 @@
 		D52EF1F51830C8A80016EC4A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1F41830C8A80016EC4A /* XCTest.framework */; };
 		D52EF1F61830C8A80016EC4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DB1830C8A80016EC4A /* Foundation.framework */; };
 		D52EF1F71830C8A80016EC4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EF1DF1830C8A80016EC4A /* UIKit.framework */; };
-		D52EF2101830C8F00016EC4A /* NSData+ASE128.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EF20F1830C8F00016EC4A /* NSData+ASE128.m */; };
-		D52EF2131830C9DB0016EC4A /* AES128Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EF2121830C9DB0016EC4A /* AES128Util.m */; };
-		D52EF21B1830CF0A0016EC4A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EF2191830CF0A0016EC4A /* GTMBase64.m */; };
+		D53187E21831C80C00360749 /* AES128Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D53187DC1831C80C00360749 /* AES128Util.m */; };
+		D53187E31831C80C00360749 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D53187DE1831C80C00360749 /* GTMBase64.m */; };
+		D53187E41831C80C00360749 /* NSData+ASE128.m in Sources */ = {isa = PBXBuildFile; fileRef = D53187E11831C80C00360749 /* NSData+ASE128.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +46,13 @@
 		D52EF1ED1830C8A80016EC4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D52EF1F31830C8A80016EC4A /* ASE128DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASE128DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52EF1F41830C8A80016EC4A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D52EF20E1830C8F00016EC4A /* NSData+ASE128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ASE128.h"; sourceTree = "<group>"; };
-		D52EF20F1830C8F00016EC4A /* NSData+ASE128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ASE128.m"; sourceTree = "<group>"; };
-		D52EF2111830C9DB0016EC4A /* AES128Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES128Util.h; sourceTree = "<group>"; };
-		D52EF2121830C9DB0016EC4A /* AES128Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES128Util.m; sourceTree = "<group>"; };
-		D52EF2181830CF0A0016EC4A /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		D52EF2191830CF0A0016EC4A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		D52EF21A1830CF0A0016EC4A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		D53187DB1831C80C00360749 /* AES128Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES128Util.h; sourceTree = "<group>"; };
+		D53187DC1831C80C00360749 /* AES128Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES128Util.m; sourceTree = "<group>"; };
+		D53187DD1831C80C00360749 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		D53187DE1831C80C00360749 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		D53187DF1831C80C00360749 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		D53187E01831C80C00360749 /* NSData+ASE128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ASE128.h"; sourceTree = "<group>"; };
+		D53187E11831C80C00360749 /* NSData+ASE128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ASE128.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,15 +111,9 @@
 		D52EF1E11830C8A80016EC4A /* ASE128Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D53187DA1831C80C00360749 /* ASE128 */,
 				D52EF1EA1830C8A80016EC4A /* AppDelegate.h */,
 				D52EF1EB1830C8A80016EC4A /* AppDelegate.m */,
-				D52EF20E1830C8F00016EC4A /* NSData+ASE128.h */,
-				D52EF20F1830C8F00016EC4A /* NSData+ASE128.m */,
-				D52EF2111830C9DB0016EC4A /* AES128Util.h */,
-				D52EF2121830C9DB0016EC4A /* AES128Util.m */,
-				D52EF2181830CF0A0016EC4A /* GTMBase64.h */,
-				D52EF2191830CF0A0016EC4A /* GTMBase64.m */,
-				D52EF21A1830CF0A0016EC4A /* GTMDefines.h */,
 				D52EF1ED1830C8A80016EC4A /* Images.xcassets */,
 				D52EF1E21830C8A80016EC4A /* Supporting Files */,
 			);
@@ -135,6 +129,20 @@
 				D52EF1E91830C8A80016EC4A /* ASE128Demo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D53187DA1831C80C00360749 /* ASE128 */ = {
+			isa = PBXGroup;
+			children = (
+				D53187DB1831C80C00360749 /* AES128Util.h */,
+				D53187DC1831C80C00360749 /* AES128Util.m */,
+				D53187DD1831C80C00360749 /* GTMBase64.h */,
+				D53187DE1831C80C00360749 /* GTMBase64.m */,
+				D53187DF1831C80C00360749 /* GTMDefines.h */,
+				D53187E01831C80C00360749 /* NSData+ASE128.h */,
+				D53187E11831C80C00360749 /* NSData+ASE128.m */,
+			);
+			path = ASE128;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52EF2101830C8F00016EC4A /* NSData+ASE128.m in Sources */,
-				D52EF2131830C9DB0016EC4A /* AES128Util.m in Sources */,
-				D52EF21B1830CF0A0016EC4A /* GTMBase64.m in Sources */,
 				D52EF1EC1830C8A80016EC4A /* AppDelegate.m in Sources */,
+				D53187E41831C80C00360749 /* NSData+ASE128.m in Sources */,
 				D52EF1E81830C8A80016EC4A /* main.m in Sources */,
+				D53187E21831C80C00360749 /* AES128Util.m in Sources */,
+				D53187E31831C80C00360749 /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
